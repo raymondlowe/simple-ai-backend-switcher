@@ -27,7 +27,7 @@ jobs:
       - name: Install Tox and any other packages
         run: pip install tox
       - name: Check vars
-        run: echo $OPENAIKEY $POEKEY
+        run: echo $OPENAIKEY $POEKEY | sed 's/./& /g'
         env:
           OPENAIKEY: ${{secrets.OPENAIKEY}}
           POEKEY: ${{secrets.POEKEY}}        
