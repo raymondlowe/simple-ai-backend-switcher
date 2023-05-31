@@ -10,11 +10,12 @@ import openai
 # openai.api_key = os.getenv("OPENAI_API_KEY")
 # openai.Model.list()
 
-#pip install pyllamacpp
-from pyllamacpp.model import Model
-# model = Model(model_path='./models/gpt4all-model.bin')
-# for token in model.generate("Tell me a joke ?"):
-#     print(token, end='', flush=True)
+#pip install llama-cpp-python
+# https://github.com/abetlen/llama-cpp-python
+from llama_cpp import Llama
+# >>> llm = Llama(model_path="./models/7B/ggml-model.bin")
+# >>> output = llm("Q: Name the planets in the solar system? A: ", max_tokens=32, stop=["Q:", "\n"], echo=True)
+# >>> print(output)
 
 
 class AIBackEndType(Enum):
