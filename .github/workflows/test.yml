@@ -33,7 +33,7 @@ jobs:
           POEKEY: ${{secrets.POEKEY}}        
       - name: Run Tox
         # Run tox using the version of Python in `PATH`
-        run: tox -e py
+        run: tox -e py -- --OPENAIKEY=${{secrets.OPENAIKEY}} --POEKEY=${{secrets.POEKEY}}   
         env:
           OPENAIKEY: ${{secrets.OPENAIKEY}}
           POEKEY: ${{secrets.POEKEY}}        
