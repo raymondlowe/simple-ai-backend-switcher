@@ -4,21 +4,19 @@ with open('README.md', 'r', encoding='utf-8') as fh:
     long_description = fh.read()
 
 setuptools.setup(
-    name='simple_ai_backend_switcher',
-    author='Tom Chen',
-    author_email='tomchen.org@gmail.com',
-    description='Example PyPI (Python Package Index) Package',
-    keywords='example, pypi, package',
+    name='simpleaibackendswitcher',
+    author='raymond lowe',
+    author_email='raymond@wlmedia.com',
+    description='simple ai backend switcher',
+    keywords='ai, chatgpt, openai, poe, llama.cpp',
     long_description=long_description,
     long_description_content_type='text/markdown',
-    url='https://github.com/tomchen/simple_ai_backend_switcher',
+    url='https://github.com/raymondlowe/simpleaibackendswitcher',
     project_urls={
-        'Documentation': 'https://github.com/tomchen/simple_ai_backend_switcher',
+        'Documentation': 'https://github.com/raymondlowe/simpleaibackendswitcher',
         'Bug Reports':
-        'https://github.com/tomchen/simple_ai_backend_switcher/issues',
-        'Source Code': 'https://github.com/tomchen/simple_ai_backend_switcher',
-        # 'Funding': '',
-        # 'Say Thanks!': '',
+        'https://github.com/raymondlowe/simpleaibackendswitcher/issues',
+        'Source Code': 'https://github.com/raymondlowe/simpleaibackendswitcher'
     },
     package_dir={'': 'src'},
     packages=setuptools.find_packages(where='src'),
