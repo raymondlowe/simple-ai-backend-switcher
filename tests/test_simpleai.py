@@ -9,7 +9,7 @@ class TestSimpleAI(unittest.TestCase):
         """Test creating a SimpleAI instance and getting a reply from the AI"""
 
         # Get the access token from an environment variable
-        access_token = os.environ.get('OpenAIKey')
+        access_token = os.environ.get('OPENAIKEY')
         self.assertIsNotNone(access_token, "OpenAIKey is not defined in the environment variables.")
 
         # Initialize the SimpleAI class with a backend and access token
@@ -29,7 +29,7 @@ class TestSimpleAI(unittest.TestCase):
         """Test creating a SimpleAI instance and getting a reply from the AI"""
 
         # Get the access token from an environment variable
-        access_token = os.environ.get('poekey')
+        access_token = os.environ.get('POEKEY')
         self.assertIsNotNone(access_token, "poekey is not defined in the environment variables.")
 
         # Initialize the SimpleAI class with a backend and access token

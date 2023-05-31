@@ -25,20 +25,9 @@ jobs:
           python-version: ${{ matrix.python }}
       - name: Install Tox and any other packages
         run: pip install tox
-      - name: Set env
-        env:
-          OpenAIKey: ${{ secrets.OPENAIKEY }}
-          poekey: ${{ secrets.POEKEY }}
-        run: echo "I know what the secret token is!"
-      - name: Step 1 - Echo out a GitHub Actions Secret to the logs
-        run: |
-          echo "The GitHub Action Secret will be masked:  "
-          echo ${{ secrets.OPENAIKEY }}
-          echo "Trick to echo GitHub Actions Secret:  "
-          echo ${{secrets.POEKEY}} | sed 's/./& /g' 
       - name: Run Tox
         # Run tox using the version of Python in `PATH`
-        env:
-          OpenAIKey: ${{ secrets.OPENAIKEY }}
-          poekey: ${{ secrets.POEKEY }}
         run: tox -e py
+        env:
+          OPENAIKEY: ${{ secrets.OPENAIKEY }}
+          POEKEY: ${{ secrets.POEKEY }}        
