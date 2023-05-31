@@ -6,7 +6,7 @@ with open('README.md', 'r', encoding='utf-8') as fh:
 setuptools.setup(
     name='simpleaibackendswitcher',
     author='raymond lowe',
-    author_email='raymond@wlmedia.com',
+    author_email='raymond-github@wlmedia.com',
     description='simple ai backend switcher',
     keywords='ai, chatgpt, openai, poe, llama.cpp',
     long_description=long_description,
