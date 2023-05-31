@@ -20,3 +20,5 @@ class Number(object):
     @classmethod
     def addall(cls, number_obj_iter):
         cls(sum(n.val() for n in number_obj_iter))
+
+
