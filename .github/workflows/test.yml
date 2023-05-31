@@ -27,4 +27,7 @@ jobs:
         run: pip install tox
       - name: Run Tox
         # Run tox using the version of Python in `PATH`
+        env:
+          OpenAIKey: ${{ secrets.OPENAIKEY }}
+          poekey: ${{ secrets.POEKEY }}
         run: tox -e py
