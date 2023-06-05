@@ -35,3 +35,14 @@ print('from poe: "', poe_says)
 print('from chatgpt: "', chatgpt_says)
 ```
 
+
+## Windows install notes
+
+On Windows llama-cpp-python (which is not integrated yet) will try to install and will fai
+unless you first install Visual Studio Build Tools for C++.
+
+Download from: https://visualstudio.microsoft.com/downloads/
+
+Install and choose only the C++ Desktop development workload and install.  If you have a previous 
+version already installed it may not work until you remove that and have a clean install of the
+new version.
